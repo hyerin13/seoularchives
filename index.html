@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Huge Inc_index</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="Hyerin">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!--브라우저 css 초기화(초기화 css가 위에 있어야함)-->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <!--구글 웹폰트 링크-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+
+    <script>
+        /*
+        var header_state = 0;
+
+        function logoClick() {
+            if (header_state == 0) {
+                document.getElementById("home_header").style =
+                    "animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;"
+
+                    document.getElementById("main").style="padding-top:440px;"
+
+                header_state = 1;
+            } else {
+                document.getElementById("home_header").style =
+                    "animation-name:header_animation_off; animation-duration:0.5s;"
+
+                    document.getElementById("main").style = "padding-top:0px;"
+
+                header_state = 0;
+            }
+        }
+        */
+
+        var header_state = 0;
+
+            function logoClick() {
+                if (document.body.clientWidth > 767 ) {
+                    if (header_state == 0) {
+                        document.getElementById("home_header").style.height ="440px";
+                        document.getElementById("main").style = "padding-top:440px;"
+
+                        document.getElementById("logo").style.display="none";
+                        document.getElementById("logo_open").style.display="flex";
+
+                        header_state = 1;
+                    }
+                    else {
+                        document.getElementById("home_header").style.height = "0";
+                        document.getElementById("main").style = "padding-top:0px;"
+
+                        document.getElementById("logo").style.display = "flex";
+                        document.getElementById("logo_open").style.display = "none";
+
+                        header_state = 0;
+                    }
+                }
+                else {
+                    if (header_state == 0) {
+                        document.getElementById("home_header").style.height = "80vh";
+                        document.getElementById("main").style = "padding-top:80vh;";
+
+                        document.getElementById("logo").style.display = "none";
+                        document.getElementById("logo_open").style.display = "flex";
+
+                        header_state = 1;
+                    }
+                    else {
+                        document.getElementById("home_header").style.height = "0";
+                        document.getElementById("main").style = "padding-top:0;";
+
+                        document.getElementById("logo").style.display = "flex";
+                        document.getElementById("logo_open").style.display = "none";
+
+                        header_state = 0;
+                    }
+                }
+            }
+    </script>
+</head>
+
+<body>
+    <!--h버튼-->
+    <div id="logo" onclick="logoClick()" class="button_h">
+        <div class="button_h_text">H</div>
+    </div>
+    <div id="logo_open" onclick="logoClick()" class="button_h_open">
+        <span>HUGE</span>
+    </div>
+
+    <!--h버튼 누르면 열리는 창-->
+    <header id="home_header">
+        <nav class="gnb">
+            <ul class="menu_wrap">
+                <li>
+                    <a href="index.html">Hello.</a>
+                    <hr>
+                    <p>Today at Huge.</p>
+                    <div></div>
+                </li>
+
+                <li>
+                    <a href="work.html">Work.</a>
+                    <hr>
+                    <p>What we've made.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="about.html">About.</a>
+                    <hr>
+                    <p>Who we are.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="career.html">Career.</a>
+                    <hr>
+                    <p>Join the team.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="contact.html">Contact.</a>
+                    <hr>
+                    <p>Get in touch.</p>
+                    <div></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+    </header>
+
+    <main id="main">
+    <!--Home 1페이지-->
+    <section class="home_section" id="home_hello">
+    <div class="home_section_wrap">
+        <h1 class="home_section_hello">Hello.</h1>
+        <h1 class="home_section_hi">Hi.</h1>
+        <div class="home_section_bottom">
+            <p class="home_section_bottom_text">Today at Huge.</p>
+            <div class="home_section_bottom_line"></div>
+        </div>
+    </div>
+    </section>
+    <!--1페이지 끝-->
+
+    <!--2페이지-->
+    <section id="home_01">
+        <div class="home_01_img">
+            <div class="home_01_index">
+                <p>01.</p>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_content_wrap_title">Win.</div>
+                <div class="home_01_content_subwrap">
+                    <h2>Huge Thanks.</h2>
+                    <div class="home_01_content_subwrap_sub">
+                        <div></div>
+                        <p>Compaign US named Huge its 2019 Innovation Agency of the Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--2페이지 끝-->
+
+    <!--3페이지-->
+    <section id="home_02">
+        <div class="home_02_img">
+            <div class="home_01_index">
+                <p>02.</p>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_content_wrap_title">Work.</div>
+                <div class="home_01_content_subwrap">
+                    <h2>#Free The Period.</h2>
+                    <div class="home_01_content_subwrap_sub">
+                        <div></div>
+                        <p>To highlight period inequality, Huge partnered with PERIOD. to build a coin-operated toilet paper dispenser and installed it in men's restrooms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--3페이지 끝-->
+    
+   
+
+    <!--4페이지-->
+    <section id="home_03">
+        <div class="home_03_img">
+            <div class="home_02_index">
+                <p>03.</p>
+                <div></div>
+            </div>
+        </div>
+    
+        <div class="home_01_content">
+            <div class="home_02_content_wrap">
+                <div class="home_02_content_wrap_title">Leadership.</div>
+                <div class="home_02_content_subwrap">
+                    <h2>Huge Appointment.</h2>
+                    <div class="home_02_content_subwrap_sub">
+                        <div></div>
+                        <p>After three years leading global strategic growth for Huge, Matt Weiss has been appointed President, Huge BK.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--4페이지 끝-->
+
+    <!--5페이지-->
+    <section id="home_04">
+        <div class="home_04_img">
+            <div class="home_01_index">
+                <p>04.</p>
+                <div></div>
+            </div>
+        </div>
+    
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_content_wrap_title">Work.</div>
+                <div class="home_01_content_subwrap">
+                    <h2>It's in the bag.</h2>
+                    <div class="home_01_content_subwrap_sub">
+                        <div></div>
+                        <p>Huge rebrands grocery delivery service Shipt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--5페이지 끝-->
+
+    <!--6페이지-->
+    <section id="home_05">
+        <div class="home_05_img">
+            <div class="home_02_index">
+                <p>05.</p>
+                <div></div>
+            </div>
+        </div>
+    
+        <div class="home_01_content">
+            <div class="home_02_content_wrap">
+                <div class="home_02_content_wrap_title">Leadership.</div>
+                <div class="home_02_content_subwrap">
+                    <h2>Hello Fura.</h2>
+                    <div class="home_02_content_subwrap_sub">
+                        <div></div>
+                        <p>Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--6페이지 끝-->
+
+    <!--7페이지-->
+    <section id="home_06">
+        <div class="home_06_img">
+            <div class="home_01_index">
+                <p>06.</p>
+                <div></div>
+            </div>
+        </div>
+    
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_content_wrap_title">Work.</div>
+                <div class="home_01_content_subwrap">
+                    <h2>#ColorCommentary.</h2>
+                    <div class="home_01_content_subwrap_sub">
+                        <div></div>
+                        <p>Huge partnered with Pantone on a social media campaign for the Big Game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--7페이지 끝-->
+
+    <!--8페이지-->
+    <section id="home_07">
+        <div class="home_07_img">
+            <div class="home_02_index">
+                <p>07.</p>
+                <div></div>
+            </div>
+        </div>
+    
+        <div class="home_01_content">
+            <div class="home_02_content_wrap">
+                <div class="home_02_content_wrap_title">Culture.</div>
+                <div class="home_02_content_subwrap">
+                    <h2>Black History Month.</h2>
+                    <div class="home_02_content_subwrap_sub">
+                        <div></div>
+                        <p>This is not a moment, issa movement. H by Jacqueline DeBerry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--8페이지 끝-->
+    
+    <!--footer-->
+    <footer class="home_footer bg_color_black color_white">
+        <div class="home_footer_container">
+            <div class="footer_content_left">
+                <div>HUGE</div>
+                <p>Make something you love.</p>
+            </div>
+
+            <div class="footer_content_right">
+                <div>
+                    <a href="hello.html">Hello</a>
+                    <a href="work.html">Work</a> 
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a> 
+                    <a href="contact.html" class="margin_right_none">Contact</a>
+                </div>
+                <p class="footer_aside">
+                    © 2020 Huge LLC. Legal.<br>
+                    CCPA Privacy Notice<br>
+                    Modern Slavery Act Statement
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--footer 끝-->
+    </main>
+</body>
+
+</html>
