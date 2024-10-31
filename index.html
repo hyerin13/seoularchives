@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <!--브라우저 css 초기화(초기화 css가 위에 있어야함)-->
     <link rel="stylesheet" type="text/css" href="css/common.css">
 
     <!--구글 웹폰트 링크-->
@@ -13,50 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <script>
-        var header_state = 0;
-
-        function logoClick() {
-            if (document.body.clientWidth > 767 ) {
-                if (header_state == 0) {
-                    document.getElementById("home_header").style.height ="440px";
-                    document.getElementById("main").style = "padding-top:440px;"
-
-                    document.getElementById("logo").style.display="none";
-                    document.getElementById("logo_open").style.display="flex";
-
-                    header_state = 1;
-                }
-                else {
-                    document.getElementById("home_header").style.height = "0";
-                    document.getElementById("main").style = "padding-top:0px;"
-
-                    document.getElementById("logo").style.display = "flex";
-                    document.getElementById("logo_open").style.display = "none";
-
-                    header_state = 0;
-                }
-            }
-            else {
-                if (header_state == 0) {
-                    document.getElementById("home_header").style.height = "80vh";
-                    document.getElementById("main").style = "padding-top:80vh;";
-
-                    document.getElementById("logo").style.display = "none";
-                    document.getElementById("logo_open").style.display = "flex";
-
-                    header_state = 1;
-                }
-                else {
-                    document.getElementById("home_header").style.height = "0";
-                    document.getElementById("main").style = "padding-top:0;";
-
-                    document.getElementById("logo").style.display = "flex";
-                    document.getElementById("logo_open").style.display = "none";
-
-                    header_state = 0;
-                }
-            }
-        }
     </script>
 </head>
 
@@ -67,8 +22,8 @@
             <div class="logo">logo</div>
             <div class="nav">
                 <ul>
-                    <li><a href="/Users/stacey/Downloads/seoularchives/index.html">지하철1호선</a></li>
-                    <li>교통영향평가</li>
+                    <li><a href="index.html">지하철1호선</a></li>
+                    <li><a href="influence.html">교통영향평가</a></li>
                     <li>대중교통변천</li>
                     <li>소식</li>
                     <li>이용신청</li>
@@ -302,8 +257,6 @@
 <script>
     const tabItem = document.querySelectorAll(".tab_item");
     const tabContent = document.querySelectorAll(".tab_content");
-    // const viewBtn = document.querySelectorAll(".view_btn");
-    // const viewPop = document.querySelectorAll(".view_pop");
 
     tabItem.forEach((tab, idx) => {
         tab.addEventListener("click", function () {
@@ -319,15 +272,5 @@
             tabContent[idx].classList.add("active");
         });
     });
-
-    // viewBtn.forEach((btn, idx) => {
-    //     btn.addEventListener("click", function (e) {
-    //         if (!viewPop[idx].classList.contains("active")) {
-    //             viewPop[idx].classList.add("active");
-    //         } else {
-    //             viewPop[idx].classList.remove("active");
-    //         }
-    //     });
-    // });
 </script>
 </html>
