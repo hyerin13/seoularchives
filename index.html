@@ -1,354 +1,333 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>Huge Inc_index</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Huge Inc Website">
-    <meta name="keywords" content="Design, Agency, Web, UI, UX">
-    <meta name="author" content="Hyerin">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!--브라우저 css 초기화(초기화 css가 위에 있어야함)-->
-    <link rel="stylesheet" type="text/css" href="css/destyle.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
 
     <!--구글 웹폰트 링크-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <script>
-        /*
         var header_state = 0;
 
         function logoClick() {
-            if (header_state == 0) {
-                document.getElementById("home_header").style =
-                    "animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;"
+            if (document.body.clientWidth > 767 ) {
+                if (header_state == 0) {
+                    document.getElementById("home_header").style.height ="440px";
+                    document.getElementById("main").style = "padding-top:440px;"
 
-                    document.getElementById("main").style="padding-top:440px;"
+                    document.getElementById("logo").style.display="none";
+                    document.getElementById("logo_open").style.display="flex";
 
-                header_state = 1;
-            } else {
-                document.getElementById("home_header").style =
-                    "animation-name:header_animation_off; animation-duration:0.5s;"
-
-                    document.getElementById("main").style = "padding-top:0px;"
-
-                header_state = 0;
-            }
-        }
-        */
-
-        var header_state = 0;
-
-            function logoClick() {
-                if (document.body.clientWidth > 767 ) {
-                    if (header_state == 0) {
-                        document.getElementById("home_header").style.height ="440px";
-                        document.getElementById("main").style = "padding-top:440px;"
-
-                        document.getElementById("logo").style.display="none";
-                        document.getElementById("logo_open").style.display="flex";
-
-                        header_state = 1;
-                    }
-                    else {
-                        document.getElementById("home_header").style.height = "0";
-                        document.getElementById("main").style = "padding-top:0px;"
-
-                        document.getElementById("logo").style.display = "flex";
-                        document.getElementById("logo_open").style.display = "none";
-
-                        header_state = 0;
-                    }
+                    header_state = 1;
                 }
                 else {
-                    if (header_state == 0) {
-                        document.getElementById("home_header").style.height = "80vh";
-                        document.getElementById("main").style = "padding-top:80vh;";
+                    document.getElementById("home_header").style.height = "0";
+                    document.getElementById("main").style = "padding-top:0px;"
 
-                        document.getElementById("logo").style.display = "none";
-                        document.getElementById("logo_open").style.display = "flex";
+                    document.getElementById("logo").style.display = "flex";
+                    document.getElementById("logo_open").style.display = "none";
 
-                        header_state = 1;
-                    }
-                    else {
-                        document.getElementById("home_header").style.height = "0";
-                        document.getElementById("main").style = "padding-top:0;";
-
-                        document.getElementById("logo").style.display = "flex";
-                        document.getElementById("logo_open").style.display = "none";
-
-                        header_state = 0;
-                    }
+                    header_state = 0;
                 }
             }
+            else {
+                if (header_state == 0) {
+                    document.getElementById("home_header").style.height = "80vh";
+                    document.getElementById("main").style = "padding-top:80vh;";
+
+                    document.getElementById("logo").style.display = "none";
+                    document.getElementById("logo_open").style.display = "flex";
+
+                    header_state = 1;
+                }
+                else {
+                    document.getElementById("home_header").style.height = "0";
+                    document.getElementById("main").style = "padding-top:0;";
+
+                    document.getElementById("logo").style.display = "flex";
+                    document.getElementById("logo_open").style.display = "none";
+
+                    header_state = 0;
+                }
+            }
+        }
     </script>
 </head>
 
 <body>
-    <!--h버튼-->
-    <div id="logo" onclick="logoClick()" class="button_h">
-        <div class="button_h_text">H</div>
-    </div>
-    <div id="logo_open" onclick="logoClick()" class="button_h_open">
-        <span>HUGE</span>
-    </div>
-
-    <!--h버튼 누르면 열리는 창-->
-    <header id="home_header">
-        <nav class="gnb">
-            <ul class="menu_wrap">
-                <li>
-                    <a href="index.html">Hello.</a>
-                    <hr>
-                    <p>Today at Huge.</p>
-                    <div></div>
-                </li>
-
-                <li>
-                    <a href="work.html">Work.</a>
-                    <hr>
-                    <p>What we've made.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="about.html">About.</a>
-                    <hr>
-                    <p>Who we are.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="career.html">Career.</a>
-                    <hr>
-                    <p>Join the team.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="contact.html">Contact.</a>
-                    <hr>
-                    <p>Get in touch.</p>
-                    <div></div>
-                </li>
-            </ul>
-        </nav>
-        <div class="gnb_aside">
-            <p>Explore our thought leadership at</p>
-            <a>MAGENTA<span>.</span></a>
-        </div>
-    </header>
-
-    <main id="main">
-    <!--Home 1페이지-->
-    <section class="home_section" id="home_hello">
-    <div class="home_section_wrap">
-        <h1 class="home_section_hello">Hello.</h1>
-        <h1 class="home_section_hi">Hi.</h1>
-        <div class="home_section_bottom">
-            <p class="home_section_bottom_text">Today at Huge.</p>
-            <div class="home_section_bottom_line"></div>
+    <!-- header -->
+    <div class="header_container">
+        <div class="header">
+            <div class="logo">logo</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="/Users/stacey/Downloads/seoularchives/index.html">지하철1호선</a></li>
+                    <li>교통영향평가</li>
+                    <li>대중교통변천</li>
+                    <li>소식</li>
+                    <li>이용신청</li>
+                    <li>기관소개</li>
+                </ul>
+            </div>
+            <div class="my">my</div>
         </div>
     </div>
-    </section>
-    <!--1페이지 끝-->
+    <!-- //header -->
 
-    <!--2페이지-->
-    <section id="home_01">
-        <div class="home_01_img">
-            <div class="home_01_index">
-                <p>01.</p>
-                <div></div>
-            </div>
-        </div>
+    <!-- content -->
+    <div class="content">
+        <h2>서울 지하철 1호선</h2>
+        <ul>
+            <li class="tab_item active"><a>#1 교통난 해결책<br>: 1기 지하철 건설 배경</a></li>
+            <li class="tab_item"><a>#2 서울 지하철 1호선의<br>교통망 확대</a></li>
+            <li class="tab_item"><a>#3 지하철 미스터리<br>: 불이 꺼진 진짜 이유?</a></li>
+            <li class="tab_item"><a>#4 거리비례제 시기의<br>승차권 변화</a></li>
+            <li class="tab_item"><a>#5 국가기록원 도시철도<br>1호선 관련 검색 길잡이</a></li>
+        </ul>
 
-        <div class="home_01_content">
-            <div class="home_01_content_wrap">
-                <div class="home_01_content_wrap_title">Win.</div>
-                <div class="home_01_content_subwrap">
-                    <h2>Huge Thanks.</h2>
-                    <div class="home_01_content_subwrap_sub">
-                        <div></div>
-                        <p>Compaign US named Huge its 2019 Innovation Agency of the Year</p>
+        <div class="con1 tab_content active">
+            <div class="con1_sub">
+                <div style="width:50.5%">
+                    <p> 1960년대 서울은 인구 급증으로 인해 지상 교통수단만으로 대중교통 수요를 감당하기 어려워졌다. 도로체계의 미비와 교통량 증가로 심각한 교통난이 발생하였으며, 기존 버스나 택시 등의 확장만으로는 부족하여 새로운 교통수단이 필요해졌다. 위와 같은 과제를 해결하기 위해 정부는 1970년 ‘지하철 1호선 건설계획 및 수도권전철계획’을 발표하였고 서울시는 지하철 건설을 위한 체제를 준비하였다. 그중 대중교통량이 가장 많고 서울 동서 기본 축을 이루는 종로 구간인 서울역~청량리역인 도심 밀집구간이 1호선으로 선정되었다. 그러나 경제부총리가 당시 경제 규모와 맞지 않다고 생각해 “서울에 지하철을 건설하면 나라가 망합니다” 라고 주장하며 지하철 건설을 극구 반대 하기도 했다. 이외에도 철도청과 전원 공급 방식을 두고 논쟁이 벌어지기도 했으며 국가유산 훼손 위험성과 차관 계약 등 여러 과제가 해결되어야 했다. </p>
+                    <div class="img_box">
+                        <img src="images/subway/1/1_001.jpg" style="height:389px;">
+                        <p><a href="https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200200043871&dsid=000000000003&gubun=search">김용식외무부장관지하철차관에관한 한.일협정체결3</a><br>출처 : 국가기록원</p>
+                    </div>
+                </div>
+                <div style="width:49%">
+                    <div style="display:flex; justify-content:space-between;">
+                        <div style="width:49%">
+                            <div class="img_box">
+                                <img src="images/subway/1/1_002.jpg" style="height:264px;">
+                                <p><a href="https://archives.seoul.go.kr/item/785964?facetsUrl=%2Fcatalog%2Fresult%3F%26query%3D%25EC%2584%259C%25EC%259A%25B8%25ED%258A%25B9%25EB%25B3%2584%25EC%258B%259C%2B%25EC%25A7%2580%25ED%2595%2598%25EC%25B2%25A0%2B%25EA%25B1%25B4%25EC%2584%25A4%25EB%25B3%25B8%25EB%25B6%2580%2B%25EC%2584%25A4%25EC%25B9%2598%2B%25EC%25A1%25B0%25EB%25A1%2580%26regclass%3DALL&_csrf=e2f9ef97-e7aa-4ca2-83c4-415486754f03">서울특별시 지하철 건설본부<br>설치 조례 제정, 1970 ~ 1991</a><br>출처 : 서울기록원</p>
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/1/1_004.jpg" style="height:264px;">
+                                <p><a href="https://archives.seoul.go.kr/item/1110232?facetsUrl=%2Fcatalog%2Fresult%3F%26regclass%3DRC_ITEM%26levels%3DItem%26lowuuid%3D64DB881D-2444-4779-A65E-1273BCC486C4%26lowuuid%3D5F496AFE-BC1B-4BF3-B571-B46D30319CB5%26page%3D2&_csrf=32f8eb4a-1b59-4cf8-a9ba-db62d">서울시지하철및수도권<br>전철화사업을위한차관계약,</a><br>출처 : 서울기록원</p>
+                            </div>
+                        </div>
+                        <div style="width:49%">
+                            <div class="img_box">
+                                <img src="images/subway/1/1_003.jpg" style="height:264px;">
+                                <p><a href="https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200300836216&dsid=000000000009&gubun=search">서울특별시지하철본부<br>설치조례공포(제841호) ’</a><br>출처 : 국가기록원</p>
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/1/1_005.jpg" style="height:264px;">
+                                <p><a href="https://archives.seoul.go.kr/item/166937?facetsUrl=%2Fcatalog%2Fresult%3F%26query%3D%25EC%2588%2598%25EB%258F%2584%25EA%25B6%258C%2B%25EC%25A0%2584%25EC%25B2%25A0%25EA%25B3%2584%25ED%259A%258D%26regclass%3DALL&_csrf=80e85283-5604-409a-8d5c-711ddd30cc65">수도권 전철계획,1973</a><br>출처 : 서울기록원</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--2페이지 끝-->
-
-    <!--3페이지-->
-    <section id="home_02">
-        <div class="home_02_img">
-            <div class="home_01_index">
-                <p>02.</p>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="home_01_content">
-            <div class="home_01_content_wrap">
-                <div class="home_01_content_wrap_title">Work.</div>
-                <div class="home_01_content_subwrap">
-                    <h2>#Free The Period.</h2>
-                    <div class="home_01_content_subwrap_sub">
-                        <div></div>
-                        <p>To highlight period inequality, Huge partnered with PERIOD. to build a coin-operated toilet paper dispenser and installed it in men's restrooms.</p>
+        <div class="con2 tab_content">
+            <div class="con2_sub">
+                <div style="width:38%">
+                    <div class="img_box">
+                        <img src="images/subway/2/2_001.jpg" style="width:100%;">
+                        <p><a href="https://archives.seoul.go.kr/item/1110224?facetsUrl=%2Fcatalog%2Fresult%3F%26regclass%3DRC_ITEM%26levels%3DItem%26lowuuid%3D64DB881D-2444-4779-A65E-1273BCC486C4%26lowuuid%3D5F496AFE-BC1B-4BF3-B571-B46D30319CB5%26page%3D1&_csrf=2bee316e-c854-4539-80e1-91c33">지하철건설을위한차관교환공문서명,</a><br>출처 : 서울기록원</p>
+                    </div>
+                </div>
+                <div style="width:60%;">
+                    <p>서울 지하철 1호선은 서울의 지하철 건설 기본계획 중 도심부의 교통소통을 위한 가장 중요한 노선이다. 전 구간의 궤도 부설을 완료하여 서울역~청량리역을 담당할 건설본부의 설치목적, 사업 범위 등을 밝히는 ‘서울특별시 지하철건설본부 설치 조례’를 제정했다. 이후 9.54km 구간인 서울지하철 1호선이 8월 15일 개통되었고 동시에 수도권 전철(서울~수원, 구로~인천, 용산~성북)도 함께 개통되었다. 1974년 개통 당시 서울 지하철 1호선(종로선)은 서울역~시청~화신앞~종로3가~종로5가~동대문~신설동~제기동~청량리이다. 현재의 종각역은 당시에 종로1가와 2가 사이에 위치했던 ‘화신백화점’의 명칭을 빌려 ‘화신앞’으로 부르기도 했다. 현재 지하철 1호선은 경인선, 경부선 등 간선철도 노선들과 직결되어 경기도 연천군에 있는 연천역부터 인천광역시 중구에 있는 인천역, 충청남도 아산시에 있는 신창역까지 연결한다. 총 길이 218.9km로 수도권 전철 중 가장 긴 거리를 운행하고 있다.</p>
+                    <div>
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/2/2_002.jpg" style="width:88.3%;">
+                                <p><a href="https://archives.seoul.go.kr/item/32903?facetsUrl=%2Fcatalog%2Fresult%3F%26regclass%3DRC_ITEM%26pageSize%3D10%26pageSort%3Dcreatedateup%26query%3D%25EC%2584%259C%25EC%259A%25B8%25EB%258F%2584%25EC%258B%259C%25EA%25B3%2584%25ED%259A%258D%2B%25EC%2584%25A4%252">서울도시계획 설시계획<br>인가 (지하고속철도), 1971</a><br>출처 : 서울기록원</p>
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/2/2_002.jpg" style="width:88.3%;">
+                                <p><a href="https://archives.seoul.go.kr/item/32956?facetsUrl=%2Fcatalog%2Fresult%3F%26regclass%3DRC_ITEM%26access%3DY%26query%3D%26reQuery%3D%26lowuuid%3DB3B1FB1D-D3B9-46D9-9F93-A64852899436%26lowuuid%3D5F496AFE-BC1B-4BF3-B571-B46D30319CB5%26acspoint%3D%26contributor">서울도시계획(고속철도)결정<br>및 실시계획인가요청,1971</a><br>출처 : 서울기록원</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--3페이지 끝-->
-    
-   
-
-    <!--4페이지-->
-    <section id="home_03">
-        <div class="home_03_img">
-            <div class="home_02_index">
-                <p>03.</p>
-                <div></div>
+        <div class="con3 tab_content">
+            <p>남영역과 서울역을 운영하는 회사가 다르기 때문이다. 현재 서울 지하철 1호선이 수도권 전철 1호선과 연결되어 있고,  두 기관의 구간이 혼재되어 있기 때문에 서울교통공사(서울~청량리 구간)와 한국철도공사 (남영역~신창 구간)가 공동으로 1호선을 운영하고 있다. 서울역을 기점으로 남영역 방향인 한국철도공사 구역에서는 25,000V의 교류 전원을 사용하는 반면에, 서울역에서 시청 방향인(서울 지하철 1호선) 서울지하철공사 구역에서는 1,500V의 직류 전원을 사용한다. 이렇게 운영 회사의 전력 공급 방식이 변경되기 때문에 일시적으로 전류를 차단시켜 전기의 경로를 바꾼다. 이를 ‘절연구간＇이라고 부른다.</p>
+            <div class="con3_sub">
+                <div style="width:30%;">
+                    <div class="img_box">
+                        <img src="images/subway/2/2_001.jpg" style="width:100%;">
+                        <p><a href="https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200300875224&dsid=000000000003&gubun=search">지하철건설을위한차관교환공문서명,</a><br>출처 : 서울기록원</p>
+                    </div>
+                </div>
+                <div style="width:63%; text-align:center;">
+                    <div style="display:flex; justify-content:space-between;">
+                        <div class="img_box">
+                            <img src="images/subway/2/2_002.jpg" style="width:98.7%;">
+                        </div>
+                        <div class="img_box">
+                            <img src="images/subway/2/2_002.jpg" style="width:98.7%;">
+                        </div>
+                    </div>
+                    <p><a href="https://archives.seoul.go.kr/item/1110224?facetsUrl=%2Fcatalog%2Fresult%3F%26regclass%3DRC_ITEM%26levels%3DItem%26lowuuid%3D64DB881D-2444-4779-A65E-1273BCC486C4%26lowuuid%3D5F496AFE-BC1B-4BF3-B571-B46D30319CB5%26page%3D1&_csrf=2bee316e-c854-4539-80e1-91c33">지하철건설을위한차관교환공문서명,</a><br>출처 : 서울기록원</p>
+                </div>
             </div>
         </div>
-    
-        <div class="home_01_content">
-            <div class="home_02_content_wrap">
-                <div class="home_02_content_wrap_title">Leadership.</div>
-                <div class="home_02_content_subwrap">
-                    <h2>Huge Appointment.</h2>
-                    <div class="home_02_content_subwrap_sub">
-                        <div></div>
-                        <p>After three years leading global strategic growth for Huge, Matt Weiss has been appointed President, Huge BK.</p>
+        <div class="con4 tab_content">
+            <p>지하철 1호선이 개통하면서 통행역 간 요금을 부과하는 ‘거리비례제’가 등장했다. 기본구간 요금은 30원/8km를 적용하고, 1km 추가 당 3원씩 초가 운임을 부과하는 방식이다. 이는 물가 상승 등의 요인에 의해 거의 매년 인상되기도 했다.</p>
+            <h3 style="text-align:center;">왼쪽-어른/오른쪽-어린이 및 군인</h3>
+            <div class="con4_sub">
+                <div style="width:32%;">
+                    <div class="con4_box">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_1.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_2.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>초기</p>
+                    </div>
+                    <div class="con4_box2">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_7.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_8.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1979년 05월 01일</p>
+                    </div>
+                    <div class="con4_box2">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_13.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_14.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1981년 06월 01일</p>
+                    </div>
+                </div>
+                <div style="width:32%">
+                    <div class="con4_box">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_3.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_4.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1975년 07월 01일</p>
+                    </div>
+                    <div class="con4_box2">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_9.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_10.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1980년 01월 05일</p>
+                    </div>
+                    <div class="con4_box2">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_15.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_16.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1981년 12월 15일</p>
+                    </div>
+                </div>
+                <div style="width:32%">
+                    <div class="con4_box">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_5.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_6.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1978년 06월 21일</p>
+                    </div>
+                    <div class="con4_box2">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_11.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_12.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1980년 05월 15일</p>
+                    </div>
+                    <div class="con4_box2">
+                        <div style="display:flex; justify-content:space-between;">
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_17.jpg" style="width:95%;">
+                            </div>
+                            <div class="img_box">
+                                <img src="images/subway/4/4_001_18.jpg" style="width:95%;">
+                            </div>
+                        </div>
+                        <p>1978년 06월 21일</p>
                     </div>
                 </div>
             </div>
+            <div style="width: 32%; margin-left: 35.3%;">
+                <p style="color:blue; font-size:12px;">->지하철공사(81년 9월) 설립으로 서울시 로고 및 지하철공사 로고를 혼용함<br>->어린이, 군인 룰지 색상을 적색으로 변경함</p>
+            </div>
+            <p style="text-align:center;"><a href="https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200902609934&gubun=search#392">한국철도승차권도록</a> 참고<br>출처 : 국가기록원</p>
         </div>
-    </section>
-    <!--4페이지 끝-->
-
-    <!--5페이지-->
-    <section id="home_04">
-        <div class="home_04_img">
-            <div class="home_01_index">
-                <p>04.</p>
-                <div></div>
+        <div class="con5 tab_content">
+            <p><a href="https://www.archives.go.kr/next/newsearch/searchGuideDetail.do?guideSeq=261">국가기록원 도시철도 1호선 관련 검색 길잡이</a></p>
+            <p>청춘을 싣고 달려온 서울 지하철 50년_서울교통공사 개통 50주년 영상</p>
+            <div style="text-align:center;">
+                <iframe width="1100" height="700" src="https://www.youtube.com/embed/APS4B2KzVVU?si=FEet-WrsqyfKk768" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-    
-        <div class="home_01_content">
-            <div class="home_01_content_wrap">
-                <div class="home_01_content_wrap_title">Work.</div>
-                <div class="home_01_content_subwrap">
-                    <h2>It's in the bag.</h2>
-                    <div class="home_01_content_subwrap_sub">
-                        <div></div>
-                        <p>Huge rebrands grocery delivery service Shipt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--5페이지 끝-->
-
-    <!--6페이지-->
-    <section id="home_05">
-        <div class="home_05_img">
-            <div class="home_02_index">
-                <p>05.</p>
-                <div></div>
-            </div>
-        </div>
-    
-        <div class="home_01_content">
-            <div class="home_02_content_wrap">
-                <div class="home_02_content_wrap_title">Leadership.</div>
-                <div class="home_02_content_subwrap">
-                    <h2>Hello Fura.</h2>
-                    <div class="home_02_content_subwrap_sub">
-                        <div></div>
-                        <p>Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--6페이지 끝-->
-
-    <!--7페이지-->
-    <section id="home_06">
-        <div class="home_06_img">
-            <div class="home_01_index">
-                <p>06.</p>
-                <div></div>
-            </div>
-        </div>
-    
-        <div class="home_01_content">
-            <div class="home_01_content_wrap">
-                <div class="home_01_content_wrap_title">Work.</div>
-                <div class="home_01_content_subwrap">
-                    <h2>#ColorCommentary.</h2>
-                    <div class="home_01_content_subwrap_sub">
-                        <div></div>
-                        <p>Huge partnered with Pantone on a social media campaign for the Big Game.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--7페이지 끝-->
-
-    <!--8페이지-->
-    <section id="home_07">
-        <div class="home_07_img">
-            <div class="home_02_index">
-                <p>07.</p>
-                <div></div>
-            </div>
-        </div>
-    
-        <div class="home_01_content">
-            <div class="home_02_content_wrap">
-                <div class="home_02_content_wrap_title">Culture.</div>
-                <div class="home_02_content_subwrap">
-                    <h2>Black History Month.</h2>
-                    <div class="home_02_content_subwrap_sub">
-                        <div></div>
-                        <p>This is not a moment, issa movement. H by Jacqueline DeBerry</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--8페이지 끝-->
-    
-    <!--footer-->
-    <footer class="home_footer bg_color_black color_white">
-        <div class="home_footer_container">
-            <div class="footer_content_left">
-                <div>HUGE</div>
-                <p>Make something you love.</p>
-            </div>
-
-            <div class="footer_content_right">
-                <div>
-                    <a href="hello.html">Hello</a>
-                    <a href="work.html">Work</a> 
-                    <a href="about.html">About</a>
-                    <a href="careers.html">Careers</a> 
-                    <a href="contact.html" class="margin_right_none">Contact</a>
-                </div>
-                <p class="footer_aside">
-                    © 2020 Huge LLC. Legal.<br>
-                    CCPA Privacy Notice<br>
-                    Modern Slavery Act Statement
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!--footer 끝-->
-    </main>
+    </div>
+    <!-- //content -->
 </body>
 
+<script>
+    const tabItem = document.querySelectorAll(".tab_item");
+    const tabContent = document.querySelectorAll(".tab_content");
+    // const viewBtn = document.querySelectorAll(".view_btn");
+    // const viewPop = document.querySelectorAll(".view_pop");
+
+    tabItem.forEach((tab, idx) => {
+        tab.addEventListener("click", function () {
+            tabContent.forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            tabItem.forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            tabItem[idx].classList.add("active");
+            tabContent[idx].classList.add("active");
+        });
+    });
+
+    // viewBtn.forEach((btn, idx) => {
+    //     btn.addEventListener("click", function (e) {
+    //         if (!viewPop[idx].classList.contains("active")) {
+    //             viewPop[idx].classList.add("active");
+    //         } else {
+    //             viewPop[idx].classList.remove("active");
+    //         }
+    //     });
+    // });
+</script>
 </html>
