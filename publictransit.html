@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <!--구글 웹폰트 링크-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header_container">
+        <div class="header">
+            <div class="logo">logo</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">지하철1호선</a></li>
+                    <li><a href="influence.html">교통영향평가</a></li>
+                    <li><a href="publictransit.html">대중교통변천</a></li>
+                    <li>소식</li>
+                    <li>이용신청</li>
+                    <li>기관소개</li>
+                </ul>
+            </div>
+            <div class="my">my</div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- content -->
+    <div class="content">
+        <h2>대중교통변천</h2>
+        <ul class="content_tab2">
+            <li class="tab_item active"><a>택시</a></li>
+            <li class="tab_item"><a>버스</a></li>
+            <li class="tab_item"><a>전차</a></li>
+            <li class="tab_item"><a>지하철</a></li>
+        </ul>
+
+        <div class="con1 tab_content active"><img src="images/publictransit/taxi.png" style="width:1200px;"></div>
+        <div class="con2 tab_content"><img src="images/publictransit/bus.png" style="width:1200px;"></div>
+        <div class="con3 tab_content"><img src="images/publictransit/streetcar.png" style="width:1200px;"></div>
+        <div class="con4 tab_content"><img src="images/publictransit/subway.png" style="width:1200px;"></div>
+    </div>
+    <!-- //content -->
+</body>
+
+<script>
+    const tabItem = document.querySelectorAll(".tab_item");
+    const tabContent = document.querySelectorAll(".tab_content");
+
+    tabItem.forEach((tab, idx) => {
+        tab.addEventListener("click", function () {
+            tabContent.forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            tabItem.forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            tabItem[idx].classList.add("active");
+            tabContent[idx].classList.add("active");
+        });
+    });
+</script>
+</html>

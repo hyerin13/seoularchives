@@ -12,19 +12,26 @@
 .nav > ul > li:nth-child(4) {left:620px;}
 .nav > ul > li:nth-child(5) {left:820px;}
 .nav > ul > li:nth-child(6) {left:1020px;}
+.nav > ul > li a {text-decoration-line:none; color:black;}
 /*header*/
 
 /*content*/
 .content {width:1200px; min-width:1200px; margin:50px auto 0; padding-bottom:80px;}
 .content h2 {font-size:45px; font-family:"Noto Sans KR"; font-weight: 00; color:#3d3a3a; text-align:center; margin-bottom:30px;}
-.content ul {display:flex; list-style:none; margin:0; padding:0;}
-.content ul li {border-bottom:1px solid #545454;}
-.content ul li a {width:220px; display:block; padding:10px; font-size:16px; color:black; text-align:center;}
-.content ul li.active {border-bottom:5px solid #316788;}
+.content .content_tab {display:flex; list-style:none; margin:0; padding:0;}
+.content .content_tab li {border-bottom:1px solid #545454;}
+.content .content_tab li a {width:220px; display:block; padding:10px; font-size:16px; color:black; text-align:center;}
+.content .content_tab li.active {border-bottom:5px solid #316788;}
+
+.content .content_tab2 {display:flex; list-style:none; margin:0; padding:0;}
+.content .content_tab2 li {border-bottom:1px solid #545454;}
+.content .content_tab2 li a {width:280px; display:block; padding:10px; font-size:16px; color:black; text-align:center;}
+.content .content_tab2 li.active {border-bottom:5px solid #316788;}
 
 .content .tab_content {display:none; padding-top:30px;}
 .content .tab_content.active {display: block;}
 .content .tab_content p {font-size:16px; line-height:1.5; color: #3d3a3a;}
+.content .tab_content a {color:black;}
 
 .con1_sub {display:flex; justify-content:space-between;}
 .con2_sub {display:flex; justify-content:space-between;}
@@ -36,4 +43,20 @@
 .con4_box2 {height:125px; background-color:#FBFBFB; border:1px solid #D8D8D8; padding:15px 10px 10px 10px; text-align:center; margin-top:10px;}
 .con4_box p {margin:10px 0 0 0;}
 .con4_box2 p {margin:10px 0 0 0;}
+
+.content .content_box {padding-top:30px;}
+.content .content_box p {font-size:16px; line-height:1.8; color: #3d3a3a;}
+.content .content_box a {color:black;}
+.map_box {text-align:center;}
+.map_box p {text-align: left; margin: 30px 0 0 140px; color: gray !important;}
+.list {width:49%;}
+.list li {height:34px; display:flex;}
+.list li p {margin:0 0 0 10px;}
+.list li p a {text-decoration:none;}
+.circle {width:24px; height:24px; border-radius:50%; font-size:16px; line-height:1.8; color:white;}
+.blue {background-color:#4371C4;}
+.red {background-color:#FF0000;}
+.green {background-color:#92D050;}
+.navy {background-color:#002060;}
+.purple {background-color:#7030A0;}
 /*content*/
