@@ -59,4 +59,9 @@
 .green {background-color:#92D050;}
 .navy {background-color:#002060;}
 .purple {background-color:#7030A0;}
+
+.content table {width:1200px; margin-top:40px; text-align:center;}
+.content table .tr_img td {padding:10px;}
+.content table .tr_nm td {padding:0 10px 30px 10px;}
+.content table img {width:260px;}
 /*content*/
