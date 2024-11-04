@@ -28,6 +28,16 @@
 .content .content_tab2 li a {width:280px; display:block; padding:10px; font-size:16px; color:black; text-align:center;}
 .content .content_tab2 li.active {border-bottom:5px solid #316788;}
 
+.content .content_tab3 {display:flex; list-style:none; margin:0; padding:0;}
+.content .content_tab3 li {border-bottom:1px solid #545454;}
+.content .content_tab3 li a {width:380px; display:block; padding:10px; font-size:16px; color:black; text-align:center;}
+.content .content_tab3 li.active {border-bottom:5px solid #316788;}
+
+.content .content_tab4 {display:flex; list-style:none; margin:0; padding:0;}
+.content .content_tab4 li {border-bottom:1px solid #545454;}
+.content .content_tab4 li a {width:580px; display:block; padding:10px; font-size:16px; color:black; text-align:center;}
+.content .content_tab4 li.active {border-bottom:5px solid #316788;}
+
 .content .tab_content {display:none; padding-top:30px;}
 .content .tab_content.active {display: block;}
 .content .tab_content p {font-size:16px; line-height:1.5; color: #3d3a3a;}
@@ -64,4 +74,7 @@
 .content table .tr_img td {padding:10px;}
 .content table .tr_nm td {padding:0 10px 30px 10px;}
 .content table img {width:260px;}
+
+.content .con1 table {width:900px; text-align:center; margin:0 auto; margin-top:40px;}
+.content .con1 table a {padding:10px;}
 /*content*/
