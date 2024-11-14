@@ -43,10 +43,6 @@
 .content .tab_content p {font-size:16px; line-height:1.5; color: #3d3a3a;}
 .content .tab_content a {color:black;}
 
-.con1 {width:900px; margin:0 auto;}
-.con2 {width:900px; margin:0 auto;}
-.con3 {width:900px; margin:0 auto;}
-
 .con2_sub {display:flex; justify-content:space-between;}
 .con4_sub {display:flex; justify-content:space-between;}
 .img_box {text-align:center;}
