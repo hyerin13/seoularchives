@@ -43,16 +43,16 @@
 .content .tab_content p {font-size:16px; line-height:1.5; color: #3d3a3a;}
 .content .tab_content a {color:black;}
 
-.con1_sub {display:flex; justify-content:space-between;}
 .con2_sub {display:flex; justify-content:space-between;}
-.con3_sub {display:flex; justify-content:space-between;}
 .con4_sub {display:flex; justify-content:space-between;}
 .img_box {text-align:center;}
 .img_box p {text-align:center;}
 .con4_box {height:125px; background-color:#FBFBFB; border:1px solid #D8D8D8; padding:15px 10px 10px 10px; text-align:center;}
 .con4_box2 {height:125px; background-color:#FBFBFB; border:1px solid #D8D8D8; padding:15px 10px 10px 10px; text-align:center; margin-top:10px;}
+.con4_box3 {height:160px; background-color:#FBFBFB; border:1px solid #D8D8D8; padding:15px 10px 10px 10px; text-align:center; margin-top:10px;}
 .con4_box p {margin:10px 0 0 0;}
 .con4_box2 p {margin:10px 0 0 0;}
+.con4_box3 p {margin:10px 0 0 0;}
 
 .content .content_box {padding-top:30px;}
 .content .content_box p {font-size:16px; line-height:1.8; color: #3d3a3a;}
