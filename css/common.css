@@ -1,20 +1,3 @@
-/*header*/
-.header_container {width:100%; box-sizing:border-box; position:relative; z-index:1000; border-top:1px solid #E3E3E3; background:#fff; border-bottom:1px solid #E3E3E3;}
-.header {height:80px; display:flex; align-items:center; padding:0 16px; max-width:1312px; margin:0 auto; width:100%; box-sizing:border-box; position:relative; z-index:1000;}
-.nav {width:100%; text-align:center; padding:0 156px 0 163px; box-sizing:border-box;}
-.my {display:flex; justify-content:right;}
-
-.nav > ul {display:flex;}
-.nav > ul > li {width:100%; list-style:none;}
-.nav > ul > li:nth-child(1) {left:20px;}
-.nav > ul > li:nth-child(2) {left:220px;}
-.nav > ul > li:nth-child(3) {left:420px;}
-.nav > ul > li:nth-child(4) {left:620px;}
-.nav > ul > li:nth-child(5) {left:820px;}
-.nav > ul > li:nth-child(6) {left:1020px;}
-.nav > ul > li a {text-decoration-line:none; color:black;}
-/*header*/
-
 /*content*/
 .content {width:1200px; min-width:1200px; margin:50px auto 0; padding-bottom:80px;}
 .content h2 {font-size:45px; font-family:"Noto Sans KR"; font-weight: 00; color:#3d3a3a; text-align:center; margin-bottom:30px;}
